@@ -1,6 +1,5 @@
 import React from 'react';
-import { browserHistory } from 'react-router';
-import { showLock } from '../../globals';
+import PublicPage from '../../layouts/PublicPage/';
 
 
 class Landing extends React.Component {
@@ -8,14 +7,12 @@ class Landing extends React.Component {
     super(props);
   }
 
-  componentDidMount() {
-    }
-
   render() {
     return (
       <div className="landing-container">
-        Landing
-        <button onClick={showLock}> Login </button>
+        <PublicPage>
+          Hello World
+        </PublicPage>
       </div>
     );
   }

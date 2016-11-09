@@ -1,6 +1,6 @@
 import React from 'react';
 import { browserHistory } from 'react-router';
-import { isLoggedIn, logout } from '../../globals';
+import { isLoggedIn } from '../../globals';
 
 
 class Dashboard extends React.Component {
@@ -19,7 +19,7 @@ class Dashboard extends React.Component {
     return (
       <div className="dashboard-container">
         Dashboard
-        <button onClick={logout}> Logout </button>
+        TODO: Add Logout button in AppHeader
       </div>
     );
   }
