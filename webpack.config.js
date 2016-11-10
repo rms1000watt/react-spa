@@ -32,7 +32,11 @@ module.exports = {
           'postcss-loader'
         ]
       },
-      {test: /\.less$/, loader: "style!css!less"},
+      {
+        test: /\.less$/, 
+        loader: "style!css!less"
+      },
+      {test: /\.(png|jpg)$/, loader: 'file-loader?name=assets/images/[name].[ext]' },
       {
         test: /\.css$/,
         exclude: /client/,

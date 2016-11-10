@@ -3,7 +3,6 @@ import './index.less';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Landing from './screens/landing/';
-import Wrapper from './components/wrapper/';
 import Dashboard from './screens/dashboard/';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import { Router, Route, browserHistory, IndexRedirect } from 'react-router';
