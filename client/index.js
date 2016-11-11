@@ -2,9 +2,9 @@ import './index.css';
 import './index.less';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Landing from './screens/landing/';
+import Landing from './screens/Landing/';
 import NotFound from './screens/NotFound/';
-import Dashboard from './screens/dashboard/';
+import Dashboard from './screens/Dashboard/';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import { Router, Route, browserHistory, IndexRedirect } from 'react-router';
 

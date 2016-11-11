@@ -10,7 +10,9 @@ class NotFound extends React.Component {
     return (
       <div className="not-found-container">
          <PublicPage>
-            Page Not Found
+            <div className="not-found">
+              Page Not Found
+            </div>
         </PublicPage>
       </div>
     );
