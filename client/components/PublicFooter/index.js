@@ -16,12 +16,16 @@ class PublicFooter extends React.Component {
     super(props);
   }
 
+  submitNewsletter = () => {
+    console.log("TODO: submitNewsletter()")
+  }
+
   render() {
     return (
       <div className="public-footer-container">
         <Grid>
           <Row className="footer-container">
-            <Col sm={3}>
+            <Col xs={4} sm={3}>
               <h3>Overview</h3>
               <ul>
                 <li>Features</li>
@@ -31,7 +35,7 @@ class PublicFooter extends React.Component {
                 <li>Coming Soon</li>
               </ul>
             </Col>
-            <Col sm={3}>
+            <Col xs={4} sm={3}>
               <h3>Company</h3>
               <ul>
                 <li>About</li>
@@ -41,7 +45,7 @@ class PublicFooter extends React.Component {
                 <li>Contact</li>
               </ul>
             </Col>
-            <Col sm={2}>
+            <Col xs={4} sm={2}>
               <h3>Connect</h3>
               <ul>
                 <li>Youtube</li>
@@ -49,14 +53,14 @@ class PublicFooter extends React.Component {
                 <li>Twitter</li>
               </ul>
             </Col>
-            <Col sm={4}>
+            <Col xs={12} sm={4}>
               <div className="newsletter-form">
                 <p>Sign up for the newsletter and we'll inform you of updates, offers and more.</p>
                 <FormGroup>
                   <InputGroup>
                     <FormControl type="text" placeholder="Email"/>
                     <InputGroup.Button>
-                      <Button>Submit</Button>
+                      <Button onTouchTap={this.submitNewsletter}>Submit</Button>
                     </InputGroup.Button>
                   </InputGroup>
                 </FormGroup>

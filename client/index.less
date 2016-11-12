@@ -1,20 +1,18 @@
-.basic-footer-container {
-    width: 100%;
+.background-component {
     position: absolute;
-    bottom: 0;
-    border-top: 1px solid #bbb;
-    overflow: hidden;
-    div{
-        margin-left: 10%;
-        margin-top: 1%;
-        text-align: left;
-        a {
-            font-size: 12px;
-            margin-right: 15px;
-            text-decoration: none;
-            color: #777;
-        }
-    }
+    top: 0px;
+    left: 0px;
+    z-index: -999;
+}
+
+.divider {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #ddd;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(255, 255, 255, 0.75)), color-stop(0.5, rgba(250, 250, 250, 0)), color-stop(1, rgba(255, 255, 255, 0.75)));
+    position: relative;
+    margin: 70px 0 60px;
 }
 
 .navbar-default {
@@ -22,7 +20,18 @@
   border-color: transparent;
 }
 
+.landing-container {
+    width: 100%;
+}
+
 .hero-container {
+    .hero-background{
+        height: 350px;
+        // background: linear-gradient(to left,#7b4397,#dc2430);
+        .background-component;
+    }
+    padding-top: 50px;
+    padding-bottom: 100px;
     .hero{
         padding-top: 50px;
         padding-bottom: 50px;
@@ -55,7 +64,7 @@
         }
         div {
             .newsletter-form {
-                margin-top: 30px;
+                margin-top: 20px;
                 .form-group {
                     width: 80%;
                 }
@@ -75,4 +84,52 @@
         font-size: 28px;
         text-align: center;
     }
+}
+
+.features-container {
+    margin-top: 100px;
+    padding-bottom: 50px;
+    // background-color: #fafafa;
+    .header {
+        div {
+            text-align: center;
+        }
+    }
+    .feature {
+        margin-top: 55px;
+        .info {
+            padding: 35px;
+            h5 {
+
+            }
+            p {
+
+            }
+        }
+        .image {
+            img {
+                width: 400px;
+            }
+        }
+    }
+}
+
+.pricing-container {
+
+}
+
+.demonstration-container {
+    
+}
+
+.testimonials-container {
+    
+}
+
+.clients-container {
+    
+}
+
+.cta-container {
+    
 }
