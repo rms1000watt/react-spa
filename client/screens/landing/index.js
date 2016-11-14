@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../../components/Hero/';
-// import Features from '../../components/Features/';
+import PriceTable from '../../components/PriceTable/';
 import PublicPage from '../../layouts/PublicPage/';
 import {
   Button,
@@ -12,6 +12,42 @@ import {
 let backgroundStyle = {
   width: window.innerWidth,
 }
+
+let pricingData = [
+  {
+    price: 49,
+    planName: "Bronze",
+    features: [
+      "Bronze feature here",
+      "Other Bronze stuff",
+      "Oh wow its Bronze",
+      "Even more features",
+      "Even more features",
+    ],
+  },
+  {
+    price: 99,
+    planName: "Silver",
+    features: [
+      "Silver good feature",
+      "Silver awesome feature",
+      "Feature for silver",
+      "Even more features",
+      "Even more features",
+    ],
+  },
+  {
+    price: 199,
+    planName: "Gold",
+    features: [
+      "Gold best features",
+      "Features for Gold",
+      "Gold features here",
+      "Featues for Gold is best",
+      "Another row?!"
+    ],
+  },
+]
 
 class Landing extends React.Component {
   constructor(props) {
@@ -33,7 +69,7 @@ class Landing extends React.Component {
                 <div className="hero">
                     <h2>BLAH BLAH BLAH BLAH BLAH BLAH</h2>
                     <p className="sub-text">Lorem ipsum ponderum assentior dolor sit amet, illum ponderum assentior ne mei.</p>
-                    <p><Button onTouchTap={this.buttonHandler}>Signup for Free</Button></p>
+                    <p><Button onTouchTap={this.buttonHandler} bsStyle="primary">Signup for Free</Button></p>
                 </div>
                 </Col>
                 <Col sm={6}>
@@ -44,7 +80,7 @@ class Landing extends React.Component {
           </div>
 
           <div className="features-container">
-            <Row className="header">
+            <Row className="section-header">
               <Col xs={12} className="title">
                 <h4>Automated editable testable blahable?</h4>
                 <h5>Reach out to all others alike and the sorts of things.</h5>
@@ -72,6 +108,21 @@ class Landing extends React.Component {
           </div>
 
           <div className="pricing-container">
+            <Row className="section-header">
+              <Col xs={12} className="title">
+                <h4>Automated editable testable blahable?</h4>
+                <h5>Reach out to all others alike and the sorts of things.</h5>
+              </Col>
+            </Row>
+            <Row className="price-table">
+                {pricingData.map((val, ind)=>{
+                  return(
+                  <Col key={ind} xsOffset={2} xs={8} smOffset={3} sm={6} mdOffset={0} md={12/pricingData.length}>
+                    <PriceTable ind={ind} features={val.features} planName={val.planName} length={pricingData.length} price={val.price}/>
+                  </Col>
+                )})}
+            </Row>
+            
           </div>
 
           <div className="demonstration-container">
