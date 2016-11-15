@@ -1,5 +1,6 @@
 import React from 'react';
 import { showLock } from '../../globals';
+import { browserHistory } from 'react-router';
 import {
     Navbar, 
     Nav, 
@@ -26,13 +27,13 @@ class PublicHeader extends React.Component {
         <Navbar>
             <Navbar.Header>
             <Navbar.Brand>
-                <a href="/">React SPA</a>
+                <a onTouchTap={()=>{browserHistory.push("/")}}>React SPA</a>
             </Navbar.Brand>
             </Navbar.Header>
             <Nav>
-                <NavItem eventKey={1} href="/about">About</NavItem>
-                <NavItem eventKey={1} href="/team">Team</NavItem>
-                <NavItem eventKey={2} href="/contact">Contact</NavItem>
+                <NavItem eventKey={1} onTouchTap={()=>{browserHistory.push("/about")}}>About</NavItem>
+                <NavItem eventKey={1} onTouchTap={()=>{browserHistory.push("/team")}}>Team</NavItem>
+                <NavItem eventKey={2} onTouchTap={()=>{browserHistory.push("/contact")}}>Contact</NavItem>
             </Nav>
             <Nav pullRight>
                 <NavItem eventKey={1} href="" onTouchTap={this.logIn}>Log In</NavItem>

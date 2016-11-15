@@ -28,7 +28,7 @@ class PriceTable extends React.Component {
                 <div key={ind}>{val}</div>
             )})}
         </div>
-        <Button bsStyle="primary">Start Free Trial</Button>
+        <Button bsStyle="primary" onTouchTap={this.props.buttonHandler}>Start Free Trial</Button>
       </div>
     );
   }

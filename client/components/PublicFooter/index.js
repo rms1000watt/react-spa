@@ -1,4 +1,5 @@
 import React from 'react';
+import { browserHistory } from 'react-router';
 import { 
   Row,
   Col,
@@ -28,26 +29,27 @@ class PublicFooter extends React.Component {
             <Col xs={4} sm={3}>
               <h3>Overview</h3>
               <ul>
-                <li>Features</li>
-                <li>Services</li>
-                <li>Pricing</li>
-                <li>Support</li>
-                <li>Coming Soon</li>
+                <li onTouchTap={()=>{browserHistory.push("/features")}}>Features</li>
+                <li onTouchTap={()=>{browserHistory.push("/services")}}>Services</li>
+                <li onTouchTap={()=>{browserHistory.push("/pricing")}}>Pricing</li>
+                <li onTouchTap={()=>{browserHistory.push("/support")}}>Support</li>
+                <li onTouchTap={()=>{browserHistory.push("/comingSoon")}}>Coming Soon</li>
               </ul>
             </Col>
             <Col xs={4} sm={3}>
               <h3>Company</h3>
               <ul>
-                <li>About</li>
-                <li>Team</li>
-                <li>News</li>
-                <li>Blog</li>
-                <li>Contact</li>
+                <li onTouchTap={()=>{browserHistory.push("/about")}}>About</li>
+                <li onTouchTap={()=>{browserHistory.push("/team")}}>Team</li>
+                <li onTouchTap={()=>{browserHistory.push("/news")}}>News</li>
+                <li onTouchTap={()=>{browserHistory.push("/blog")}}>Blog</li>
+                <li onTouchTap={()=>{browserHistory.push("/contact")}}>Contact</li>
               </ul>
             </Col>
             <Col xs={4} sm={2}>
               <h3>Connect</h3>
               <ul>
+                {/* TODO: Link to links..*/}
                 <li>Youtube</li>
                 <li>Facebook</li>
                 <li>Twitter</li>

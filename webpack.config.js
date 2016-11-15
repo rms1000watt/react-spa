@@ -36,7 +36,10 @@ module.exports = {
         test: /\.less$/, 
         loader: "style!css!less"
       },
-      {test: /\.(png|jpg)$/, loader: 'file-loader?name=assets/images/[name].[ext]' },
+      {
+        test: /\.(png|jpg)$/, 
+        loader: 'file-loader?name=assets/images/[name].[ext]' 
+      },
       {
         test: /\.css$/,
         exclude: /client/,

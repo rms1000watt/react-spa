@@ -17,11 +17,13 @@ class PublicPage extends React.Component {
     return (
       <div className="public-page-container">
         <PublicHeader/>
-        <Grid>
+        <Grid fluid={true}>
           <Row>
-            <Col md={12} sm={12}>
+            <Col xsHidden smHidden md={1} lg={1}/>
+            <Col xs={12} sm={12} md={10} lg={10}>
               {this.props.children}
-            </Col>           
+            </Col>
+            <Col xsHidden smHidden md={1} lg={1}/>
           </Row>
         </Grid>
         <PublicFooter/>
