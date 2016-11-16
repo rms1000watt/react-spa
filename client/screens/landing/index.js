@@ -1,15 +1,13 @@
 import React from 'react';
-import Hero from '../../components/Hero/';
 import PriceTable from '../../components/PriceTable/';
 import PublicHeader from '../../components/PublicHeader/';
 import PublicFooter from '../../components/PublicFooter/';
-import { 
-  showLock 
-} from '../../globals';
+import { showLock } from '../../globals';
 import {
   Button,
   Row,
-  Col
+  Col,
+  Image
   } from 'react-bootstrap';
 
 
@@ -81,6 +79,7 @@ class Landing extends React.Component {
           </Row>
         </div>
 
+
         <div className="features-container">
           <Row className="section-header">
             <Col xs={12} className="title">
@@ -117,6 +116,20 @@ class Landing extends React.Component {
         </div>
 
 
+        <div className="demonstration-container">
+          <Row className="section-header">
+            <Col xs={12} className="title">
+              <h4>See it in Action</h4>
+            </Col>
+          </Row>
+          <Row className="demonstration">
+            <Col xs={12}>
+              <img src="/assets/images/demo.png"/>
+            </Col>
+          </Row>
+        </div>
+
+
         <div className="pricing-container">
           <Row className="section-header">
             <Col xs={12} className="title">
@@ -132,19 +145,45 @@ class Landing extends React.Component {
                 </Col>
               )})}
           </Row>
-          <div className="pricing-background"/>
         </div>
 
-        <div className="demonstration-container">
+
+        <div className="industry-container">
+          <Row className="section-header">
+            <Col xs={12} className="title">
+              <h4>Here are industries that can use this!</h4>
+            </Col>
+          </Row>
+          <Row className="industries">
+            <Col xs={6} md={4}>
+              <Image src="/assets/images/thumbnail.png" rounded responsive />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image src="/assets/images/thumbnail.png" rounded responsive />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image src="/assets/images/thumbnail.png" rounded responsive />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image src="/assets/images/thumbnail.png" rounded responsive />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image src="/assets/images/thumbnail.png" rounded responsive />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image src="/assets/images/thumbnail.png" rounded responsive />
+            </Col>
+          </Row>
         </div>
 
-        <div className="testimonials-container">
-        </div>
-
-        <div className="clients-container">
-        </div>
 
         <div className="cta-container">
+          <Row className="section-header">
+            <Col xs={12} className="title">
+              <h4>Join the Open Beta Today!</h4>
+            </Col>
+          </Row>
+          <Button onTouchTap={this.buttonHandler} bsStyle="primary">Sign Up for Free</Button>
         </div>
 
         <PublicFooter/>

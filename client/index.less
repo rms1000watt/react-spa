@@ -1,17 +1,28 @@
+// VARIABLES
+
 @blueBackground: -webkit-linear-gradient(top, #355069 0, #5E7A9B 100%);
 @whiteBackground: -webkit-linear-gradient(top, #eee 0, #ddd 100%);
 
-.navbar-default {
-  background-color: transparent;
-  border-color: transparent;
-  margin-bottom: 50px;
-  border-radius: 0px;
-  z-index: 999;
-  div {
-      div {
-          cursor: pointer;
-      }
-  }
+// STYLES
+
+.lightTheme {
+    color: #666;
+    background: #fff;
+}
+
+.blueTheme {
+    color: #fff;
+    background: #5E7A9B;
+}
+
+.darkTheme {
+    color: #fff;
+    background: radial-gradient(#36414E, #253241);
+}
+
+.padding {
+    padding-top: 90px;
+    padding-bottom: 100px;
 }
 
 // CONTAINERS
@@ -29,7 +40,8 @@
     width: 100%;
     height: 550px;
     z-index: -999;
-    background: @whiteBackground;
+    // background: @whiteBackground;
+    .blueTheme;
     padding-bottom: 100px;
     .hero{
         padding-top: 50px;
@@ -79,12 +91,13 @@
 .pricing-container {
     padding-top: 50px;
     padding-bottom: 50px;
-    background: @whiteBackground;
+    .blueTheme;
     .price-table {
         margin-top: 35px;
         padding-bottom: 50px;
         div {
             .price-table-container {
+                color: #666;
                 max-width: 330px;
                 background-color: #fff;
                 border: 1px solid #E6E6E6;
@@ -146,25 +159,50 @@
 }
 
 .demonstration-container {
-    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .demonstration {
+        padding-top: 30px;
+        div {
+            text-align: center;
+            img {
+                width: 90%;
+                max-width: 1000px;
+            }
+        }
+    }
 }
 
-.testimonials-container {
-    
-}
-
-.clients-container {
-    
+.industry-container {
+    .padding;
+    .lightTheme;
+    .industries {
+        padding-top: 90px;
+        div {
+            margin-bottom: 10px;
+            img {
+                margin: auto;
+            }
+        }
+    }
 }
 
 .cta-container {
-    
+    text-align: center;
+    .padding;
+    .lightTheme;
+    button {
+        margin-top: 30px;
+        height: 65px;
+        font-size: 18px;
+        width: 225px;
+    }
 }
 
 .public-footer-container {
+    .darkTheme;
     padding-top: 70px;
     padding-bottom: 30px;
-    background-color: #eee;
     .footer-container {
         div {
             ul {
@@ -196,8 +234,32 @@
 
 // COMPONENTS
 
-.section {
-    
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  margin-bottom: 50px;
+  border-radius: 0px;
+  z-index: 999;
+  div {
+      color: #fff;
+      div {
+          color: #fff;
+          a {
+              color: #fff !important;
+          }
+          
+          cursor: pointer;
+      }
+      ul {
+          color: #fff;
+          li {
+              color: #fff;
+              a {
+                  color: #fff !important;
+              }
+          }
+      }
+  }
 }
 
 .section-header {
