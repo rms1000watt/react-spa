@@ -51,6 +51,10 @@ export function getErrorMessage(errorCode) {
     return errorText;
 }
 
+export function isHomePath() {
+    return window.location.pathname == "/"
+}
+
 export function ajax(method, url, payload, successCB, errorCB) {
     var request = new Request(url, {
         method: method, 

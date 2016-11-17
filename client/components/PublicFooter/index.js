@@ -10,8 +10,6 @@ import {
   Button,
 } from 'react-bootstrap';
 
-
-
 class PublicFooter extends React.Component {
   constructor(props) {
     super(props);
@@ -33,7 +31,6 @@ class PublicFooter extends React.Component {
                 <li onTouchTap={()=>{browserHistory.push("/services")}}>Services</li>
                 <li onTouchTap={()=>{browserHistory.push("/pricing")}}>Pricing</li>
                 <li onTouchTap={()=>{browserHistory.push("/support")}}>Support</li>
-                <li onTouchTap={()=>{browserHistory.push("/comingSoon")}}>Coming Soon</li>
               </ul>
             </Col>
             <Col xs={4} sm={3}>
@@ -41,8 +38,6 @@ class PublicFooter extends React.Component {
               <ul>
                 <li onTouchTap={()=>{browserHistory.push("/about")}}>About</li>
                 <li onTouchTap={()=>{browserHistory.push("/team")}}>Team</li>
-                <li onTouchTap={()=>{browserHistory.push("/news")}}>News</li>
-                <li onTouchTap={()=>{browserHistory.push("/blog")}}>Blog</li>
                 <li onTouchTap={()=>{browserHistory.push("/contact")}}>Contact</li>
               </ul>
             </Col>

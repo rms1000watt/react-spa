@@ -17,7 +17,7 @@ class PublicPage extends React.Component {
     return (
       <div className="public-page-container">
         <PublicHeader/>
-        <Grid fluid={true}>
+        <Grid className="content" fluid={true}>
           <Row>
             <Col xsHidden smHidden md={1} lg={1}/>
             <Col xs={12} sm={12} md={10} lg={10}>

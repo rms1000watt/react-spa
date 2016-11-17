@@ -1,6 +1,9 @@
 import React from 'react';
-import { showLock } from '../../globals';
 import { browserHistory } from 'react-router';
+import { 
+    showLock, 
+    isHomePath 
+} from '../../globals';
 import {
     Navbar, 
     Nav, 
@@ -24,7 +27,7 @@ class PublicHeader extends React.Component {
   render() {
     return (
       <div className="public-header-container">
-        <Navbar>
+        <Navbar className={isHomePath() ? "blue-header-theme" : "light-header-theme"}>
             <Navbar.Header>
             <Navbar.Brand>
                 <a onTouchTap={()=>{browserHistory.push("/")}}>React SPA</a>

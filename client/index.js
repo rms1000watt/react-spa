@@ -2,7 +2,15 @@ import './index.css';
 import './index.less';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Team from './screens/Team/';
+import Terms from './screens/Terms/';
+import About from './screens/About/';
+import Pricing from './screens/Pricing/';
+import Support from './screens/Support/';
+import Contact from './screens/Contact/';
 import Landing from './screens/Landing/';
+import Features from './screens/Features/';
+import Services from './screens/Services/';
 import NotFound from './screens/NotFound/';
 import Dashboard from './screens/Dashboard/';
 import injectTapEventPlugin from 'react-tap-event-plugin';
@@ -21,6 +29,14 @@ class Main extends React.Component {
             <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
                 <Route path="/" component={Landing}/>
                 <Route path="/dashboard" component={Dashboard} />
+                <Route path="/about" component={About} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/features" component={Features} />
+                <Route path="/pricing" component={Pricing} />
+                <Route path="/services" component={Services} />
+                <Route path="/support" component={Support} />
+                <Route path="/team" component={Team} />
+                <Route path="/terms" component={Terms} />
                 <Route path='*' component={NotFound} />
             </Router>
         </div>

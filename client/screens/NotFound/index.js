@@ -8,7 +8,7 @@ class NotFound extends React.Component {
 
   render() {
     return (
-      <div className="not-found-container">
+      <div className="not-found-screen-container">
          <PublicPage>
             <div className="not-found">
               Page Not Found

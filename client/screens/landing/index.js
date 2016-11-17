@@ -89,29 +89,29 @@ class Landing extends React.Component {
           </Row>
 
           <Row className="feature">
-            <Col xsHidden smHidden md={1}/>
-            <Col sm={6} md={5} className="info">
+            <Col xsHidden sm={1} md={2}/>
+            <Col sm={5} md={4} className="info">
               <h5>This is a great feature</h5>
               <p>This feature is so great it will be great as a feature among your features.</p>
             </Col>
-            <Col sm={6} md={5} className="image">
+            <Col sm={5} md={4} className="image">
               <img src="/assets/images/static-hero.png"/>
             </Col>
-            <Col xsHidden smHidden md={1}/>
+            <Col xsHidden sm={1} md={2}/>
           </Row>
 
           <div className="divider"/>
 
           <Row className="feature">
-            <Col xsHidden smHidden md={1}/>
-            <Col sm={6} md={5} className="image">
+            <Col xsHidden sm={1} md={2}/>
+            <Col sm={5} md={4} className="image">
               <img src="/assets/images/static-hero.png"/>
             </Col>
-            <Col sm={6} md={5} className="info">
+            <Col sm={5} md={4} className="info">
               <h5>This is a great feature</h5>
               <p>This feature is so great it will be great as a feature among your features.</p>
             </Col>
-            <Col xsHidden smHidden md={1}/>
+            <Col xsHidden sm={1} md={2}/>
           </Row>
         </div>
 
@@ -157,21 +157,27 @@ class Landing extends React.Component {
           <Row className="industries">
             <Col xs={6} md={4}>
               <Image src="/assets/images/thumbnail.png" rounded responsive />
+              <h5>Industrial</h5>
             </Col>
             <Col xs={6} md={4}>
               <Image src="/assets/images/thumbnail.png" rounded responsive />
+              <h5>Industrial</h5>
             </Col>
             <Col xs={6} md={4}>
               <Image src="/assets/images/thumbnail.png" rounded responsive />
+              <h5>Industrial</h5>
             </Col>
             <Col xs={6} md={4}>
               <Image src="/assets/images/thumbnail.png" rounded responsive />
+              <h5>Industrial</h5>
             </Col>
             <Col xs={6} md={4}>
               <Image src="/assets/images/thumbnail.png" rounded responsive />
+              <h5>Industrial</h5>
             </Col>
             <Col xs={6} md={4}>
               <Image src="/assets/images/thumbnail.png" rounded responsive />
+              <h5>Industrial</h5>
             </Col>
           </Row>
         </div>

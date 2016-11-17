@@ -5,13 +5,56 @@
 
 // STYLES
 
+@lightThemeColor: #666;
+@blueThemeColor: #fff;
+
+.light-header-theme {
+    color: @lightThemeColor !important;
+    background: #fff;
+    ul {
+        color: @lightThemeColor;
+        li {
+            color: @lightThemeColor;
+            a {
+                color: @lightThemeColor;
+            }
+        }
+    }
+    div {
+        color: @lightThemeColor;
+        a {
+            color: @lightThemeColor;
+        }
+    }
+}
+
+.blue-header-theme {
+    color: @blueThemeColor !important;
+    background: #5E7A9B;
+    ul {
+        color: @blueThemeColor;
+        li {
+            color: @blueThemeColor;
+            a {
+                color: @blueThemeColor !important;
+            }
+        }
+    }
+    div {
+        color: @blueThemeColor;
+        a {
+            color: @blueThemeColor !important;
+        }
+    }
+}
+
 .lightTheme {
-    color: #666;
+    color: @lightThemeColor;
     background: #fff;
 }
 
 .blueTheme {
-    color: #fff;
+    color: @blueThemeColor;
     background: #5E7A9B;
 }
 
@@ -31,7 +74,13 @@
     z-index: 999;
 }
 
-.landing-container {
+.public-page-container {
+    .content {
+        min-height: 600px;
+    }
+}
+
+.landing-screen-container {
     width: 100%;
 }
 
@@ -56,7 +105,7 @@
     }
 }
 
-.not-found-container {
+.not-found-screen-container {
     .not-found{
         min-height: 600px;
         padding-top: 250px;
@@ -65,14 +114,21 @@
     }
 }
 
+
+
 .features-container {
     margin-top: 100px;
     padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
     // background-color: #fafafa;
     .feature {
         margin-top: 55px;
         .info {
             padding: 35px;
+            @media (max-width: 600px) {
+                text-align: center !important;
+            }
             h5 {
 
             }
@@ -81,7 +137,9 @@
             }
         }
         .image {
+            text-align: center;
             img {
+                margin: auto;
                 width: 400px;
             }
         }
@@ -175,11 +233,14 @@
 
 .industry-container {
     .padding;
+    padding-left: 20px;
+    padding-right: 20px;
     .lightTheme;
     .industries {
         padding-top: 90px;
         div {
-            margin-bottom: 10px;
+            text-align: center;
+            margin-bottom: 30px;
             img {
                 margin: auto;
             }
@@ -191,6 +252,8 @@
     text-align: center;
     .padding;
     .lightTheme;
+    margin-bottom: 50px;
+    // background: linear-gradient(to left,#7b4397,#5E7A9B);
     button {
         margin-top: 30px;
         height: 65px;
@@ -204,6 +267,7 @@
     padding-top: 70px;
     padding-bottom: 30px;
     .footer-container {
+        padding-bottom: 30px;
         div {
             ul {
                 list-style-type: none;
@@ -235,32 +299,30 @@
 // COMPONENTS
 
 .navbar-default {
-    .blueTheme;
-//   background-color: transparent;
     border-color: transparent;
     margin-bottom: 50px;
     border-radius: 0px;
     z-index: 999;
-    div {
-        color: #fff;
-        div {
-            color: #fff;
-            a {
-                color: #fff !important;
-            }
+    // div {
+    //     color: #fff;
+    //     div {
+    //         color: #fff;
+    //         a {
+    //             color: #fff ;
+    //         }
             
-            cursor: pointer;
-        }
-        ul {
-            color: #fff;
-            li {
-                color: #fff;
-                a {
-                    color: #fff !important;
-                }
-            }
-        }
-    }
+    //         cursor: pointer;
+    //     }
+    //     ul {
+    //         color: #fff;
+    //         li {
+    //             color: #fff;
+    //             a {
+    //                 color: #fff ;
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 .section-header {
@@ -272,9 +334,12 @@
 .divider {
     display: block;
     height: 1px;
-    width: 100%;
+    width: 80%;
     background-color: #ddd;
     background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(255, 255, 255, 0.75)), color-stop(0.5, rgba(250, 250, 250, 0)), color-stop(1, rgba(255, 255, 255, 0.75)));
     position: relative;
-    margin: 70px 0 60px;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    // margin: 70px 0 60px;
 }
