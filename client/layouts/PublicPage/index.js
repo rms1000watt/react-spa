@@ -15,9 +15,12 @@ class PublicPage extends React.Component {
 
   render() {
     return (
-      <div className="public-page-container">
+      <div className="public-layout-container">
         <PublicHeader/>
-        <Grid className="content" fluid={true}>
+        
+          <Row className={this.props.title ? "title" : "hidden"}>
+            <h3>{this.props.title}</h3>
+          </Row>
           <Row>
             <Col xsHidden smHidden md={1} lg={1}/>
             <Col xs={12} sm={12} md={10} lg={10}>
@@ -25,7 +28,7 @@ class PublicPage extends React.Component {
             </Col>
             <Col xsHidden smHidden md={1} lg={1}/>
           </Row>
-        </Grid>
+        
         <PublicFooter/>
       </div>
     );

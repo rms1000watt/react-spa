@@ -27,7 +27,7 @@ class PublicHeader extends React.Component {
   render() {
     return (
       <div className="public-header-container">
-        <Navbar className={isHomePath() ? "blue-header-theme" : "light-header-theme"}>
+        <Navbar className={isHomePath() ? "blue-header-theme" : "blue-header-theme"}>
             <Navbar.Header>
             <Navbar.Brand>
                 <a onTouchTap={()=>{browserHistory.push("/")}}>React SPA</a>

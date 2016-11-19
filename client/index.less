@@ -68,13 +68,23 @@
     padding-bottom: 80px;
 }
 
+.hidden {
+    display: none;
+}
+
 // CONTAINERS
 
 .public-header-container {
     z-index: 999;
 }
 
-.public-page-container {
+.public-layout-container {
+    .title {
+        .lightTheme;
+        padding: 10px;
+        height: 80px;
+        text-align: center;
+    }
     .content {
         min-height: 600px;
     }
@@ -93,7 +103,7 @@
     .blueTheme;
     padding-bottom: 100px;
     .hero{
-        padding-top: 50px;
+        padding-top: 100px;
         padding-bottom: 50px;
         padding-left: 35px;
         .sub-text {
@@ -101,7 +111,7 @@
         }
     }
     .hero-img {
-        padding-top: 25px;    
+        padding-top: 50px;    
     }
 }
 
@@ -250,10 +260,9 @@
 
 .cta-container {
     text-align: center;
-    .padding;
-    .lightTheme;
-    margin-bottom: 50px;
-    // background: linear-gradient(to left,#7b4397,#5E7A9B);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .blueTheme;
     button {
         margin-top: 30px;
         height: 65px;
@@ -296,33 +305,61 @@
 }
 
 
+// PUBLIC PAGES
+
+.contact-screen-container {
+    .map-row {
+        margin-bottom: 50px;
+    }
+    .contact-row{
+        padding-bottom: 100px;
+        .support {
+            background: #f8fdfe;
+            border: 1px solid #bee1f3;
+            margin-top: 5px;
+            border-radius: 6px;
+            padding: 30px 22px 18px 22px;
+            width: 70%;
+            max-width: 210px;
+            height: 150px;
+            
+        }
+        div {
+            p {
+                padding-bottom: 30px;
+            }
+            .contact-form {
+                .form-group {
+                    input{
+                        max-width: 350px;
+                    }
+                    textarea {
+                        max-width: 500px;
+                    }
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    .leaflet-container {
+        height: 400px;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+
 // COMPONENTS
 
 .navbar-default {
     border-color: transparent;
-    margin-bottom: 50px;
     border-radius: 0px;
     z-index: 999;
-    // div {
-    //     color: #fff;
-    //     div {
-    //         color: #fff;
-    //         a {
-    //             color: #fff ;
-    //         }
-            
-    //         cursor: pointer;
-    //     }
-    //     ul {
-    //         color: #fff;
-    //         li {
-    //             color: #fff;
-    //             a {
-    //                 color: #fff ;
-    //             }
-    //         }
-    //     }
-    // }
+}
+
+.navbar {
+    margin-bottom: 0px;
 }
 
 .section-header {

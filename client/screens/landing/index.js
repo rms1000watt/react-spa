@@ -1,8 +1,8 @@
 import React from 'react';
+import { showLock } from '../../globals';
 import PriceTable from '../../components/PriceTable/';
 import PublicHeader from '../../components/PublicHeader/';
 import PublicFooter from '../../components/PublicFooter/';
-import { showLock } from '../../globals';
 import {
   Button,
   Row,
@@ -59,7 +59,7 @@ class Landing extends React.Component {
 
   render() {
     return (
-      <div className="landing-container">
+      <div className="landing-screen-container">
         
         <div className="hero-container">
           <PublicHeader/>
@@ -69,7 +69,7 @@ class Landing extends React.Component {
                 <div className="hero">
                     <h2>BLAH BLAH BLAH BLAH BLAH BLAH</h2>
                     <p className="sub-text">Lorem ipsum ponderum assentior dolor sit amet, illum ponderum assentior ne mei.</p>
-                    <p><Button onTouchTap={this.buttonHandler} bsStyle="primary">Signup for Free</Button></p>
+                    <p><Button onTouchTap={this.buttonHandler} bsStyle="warning">Signup for Free</Button></p>
                 </div>
               </Col>
               <Col sm={6} md={5}>
@@ -189,9 +189,8 @@ class Landing extends React.Component {
               <h4>Join the Open Beta Today!</h4>
             </Col>
           </Row>
-          <Button onTouchTap={this.buttonHandler} bsStyle="primary">Sign Up for Free</Button>
+          <Button onTouchTap={this.buttonHandler} bsStyle="warning">Sign Up for Free</Button>
         </div>
-
         <PublicFooter/>
       </div>
     );
