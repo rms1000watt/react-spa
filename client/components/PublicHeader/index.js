@@ -27,21 +27,24 @@ class PublicHeader extends React.Component {
   render() {
     return (
       <div className="public-header-container">
-        <Navbar className={isHomePath() ? "blue-header-theme" : "blue-header-theme"}>
+        <Navbar className="blue-header-theme" collapseOnSelect>
             <Navbar.Header>
-            <Navbar.Brand>
-                <a onTouchTap={()=>{browserHistory.push("/")}}>React SPA</a>
-            </Navbar.Brand>
+                <Navbar.Brand>
+                    <a onTouchTap={()=>{browserHistory.push("/")}}>React SPA</a>
+                </Navbar.Brand>
+                <Navbar.Toggle/>
             </Navbar.Header>
-            <Nav>
-                <NavItem eventKey={1} onTouchTap={()=>{browserHistory.push("/about")}}>About</NavItem>
-                <NavItem eventKey={1} onTouchTap={()=>{browserHistory.push("/team")}}>Team</NavItem>
-                <NavItem eventKey={2} onTouchTap={()=>{browserHistory.push("/contact")}}>Contact</NavItem>
-            </Nav>
-            <Nav pullRight>
-                <NavItem eventKey={1} href="" onTouchTap={this.logIn}>Log In</NavItem>
-                <NavItem eventKey={2} href="" onTouchTap={this.signUp}><b>Sign Up</b></NavItem>
-            </Nav>
+            <Navbar.Collapse>
+                <Nav>
+                    <NavItem eventKey={1} onTouchTap={()=>{browserHistory.push("/about")}}>About</NavItem>
+                    <NavItem eventKey={1} onTouchTap={()=>{browserHistory.push("/team")}}>Team</NavItem>
+                    <NavItem eventKey={2} onTouchTap={()=>{browserHistory.push("/contact")}}>Contact</NavItem>
+                </Nav>
+                <Nav pullRight>
+                    <NavItem eventKey={1} href="" onTouchTap={this.logIn}>Log In</NavItem>
+                    <NavItem eventKey={2} href="" onTouchTap={this.signUp}><b>Sign Up</b></NavItem>
+                </Nav>
+            </Navbar.Collapse>
         </Navbar>
       </div>
     );

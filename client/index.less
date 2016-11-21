@@ -78,6 +78,7 @@
     z-index: 999;
 }
 
+
 .public-layout-container {
     .title {
         .lightTheme;
@@ -90,17 +91,18 @@
     }
 }
 
+
 .landing-screen-container {
     width: 100%;
 }
 
+
 .hero-container {
-    display: table;
-    width: 100%;
-    height: 550px;
-    z-index: -999;
-    // background: @whiteBackground;
     .blueTheme;
+    // display: table;
+    width: 100%;
+    min-height: 550px;
+    z-index: -999;
     padding-bottom: 100px;
     .hero{
         padding-top: 100px;
@@ -111,9 +113,11 @@
         }
     }
     .hero-img {
+        width: 100%;
         padding-top: 50px;    
     }
 }
+
 
 .not-found-screen-container {
     .not-found{
@@ -123,7 +127,6 @@
         text-align: center;
     }
 }
-
 
 
 .features-container {
@@ -307,12 +310,35 @@
 
 // PUBLIC PAGES
 
+.team-screen-container {
+    .members {
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        a:focus, a:hover {
+            text-decoration: none;
+        }
+        .member {
+            margin: 15px;
+            text-align: center;
+            img {
+                max-height: 180px;
+                border-radius: 10px;
+            }
+            h5 {
+                color: @lightThemeColor;
+            }
+        }
+    }
+}
+
 .contact-screen-container {
     .map-row {
         margin-bottom: 50px;
     }
     .contact-row{
-        padding-bottom: 100px;
+        padding: 0px 15px 100px;
         .support {
             background: #f8fdfe;
             border: 1px solid #bee1f3;
@@ -321,8 +347,14 @@
             padding: 30px 22px 18px 22px;
             width: 70%;
             max-width: 210px;
-            height: 150px;
+            min-height: 100px;
             
+        }
+        .contact-col {
+            padding-top: 15px;
+        }
+        .contact-icons {
+            padding: 15px 20px 50px;
         }
         div {
             p {
@@ -350,7 +382,7 @@
 }
 
 
-// COMPONENTS
+// NAVBAR
 
 .navbar-default {
     border-color: transparent;
@@ -361,6 +393,32 @@
 .navbar {
     margin-bottom: 0px;
 }
+
+.navbar-collapse {
+    border-color: transparent;
+    border-top: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.navbar-toggle {
+    border-color: transparent;
+    border: none;
+    .icon-bar {
+        background-color: white !important;
+    }
+}
+
+.navbar-toggle:hover {
+    background-color: transparent!important;
+}
+
+.navbar-toggle:focus {
+    background-color: transparent!important;
+}
+
+
+// COMPONENTS
 
 .section-header {
     div {

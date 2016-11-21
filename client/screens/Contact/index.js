@@ -1,5 +1,8 @@
 import React from 'react';
 import PublicPage from '../../layouts/PublicPage/';
+import FaFacebook from 'react-icons/lib/fa/facebook.js';
+import FaTwitter from 'react-icons/lib/fa/twitter.js';
+import FaYoutube from 'react-icons/lib/fa/youtube.js';
 import {
   Row,
   Col,
@@ -43,7 +46,7 @@ class Contact extends React.Component {
           </Row>
 
           <Row className="contact-row">
-            <Col xs={7}>
+            <Col xs={12} sm={7} className="contact-col">
               <h4>Send us a message</h4>
               <p>
                 Contact us with anything related to React SPA.<br/>
@@ -61,7 +64,7 @@ class Contact extends React.Component {
                 <Button bsStyle="warning">Submit</Button>
               </div>
             </Col>
-            <Col xs={5}>
+            <Col xs={12} sm={5} className="contact-col">
               <h5>Address</h5>
               <p>
                 University of California, Irvine<br/>
@@ -72,10 +75,15 @@ class Contact extends React.Component {
               <p>
                 (555) 555-5555
               </p>
-               <div className="support">
-                <b>Online support coming<br/>
-                 soon!</b>
-               </div>
+              <div className="support">
+              <b>Online support coming<br/>
+                soon!</b>
+              </div>
+              <div className="contact-icons">
+                <a href="http://www.facebook.com"><FaFacebook viewBox="0 0 50 75" style={{width:50, height:50}}/></a>
+                <a href="http://www.twitter.com"><FaTwitter viewBox="0 0 50 75" style={{width:50, height:50}}/></a>
+                <a href="http://www.youtube.com"><FaYoutube viewBox="0 0 50 75" style={{width:50, height:50}}/></a>
+              </div>
             </Col>
           </Row>
 
