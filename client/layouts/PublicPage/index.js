@@ -1,4 +1,5 @@
 import React from 'react';
+import CTA from '../../components/CTA/';
 import PublicHeader from '../../components/PublicHeader/';
 import PublicFooter from '../../components/PublicFooter/';
 import {
@@ -28,7 +29,7 @@ class PublicPage extends React.Component {
             </Col>
             <Col xsHidden smHidden md={1} lg={1}/>
           </Row>
-        
+          {this.props.cta ? <CTA/> : ""}
         <PublicFooter/>
       </div>
     );

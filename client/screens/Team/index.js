@@ -2,8 +2,7 @@ import React from 'react';
 import PublicPage from '../../layouts/PublicPage/';
 import {
   Row,
-  Col,
-  Image
+  Col
   } from 'react-bootstrap';
 
 
@@ -15,8 +14,9 @@ class Team extends React.Component {
   render() {
     return (
       <div className="team-screen-container">
-        <PublicPage title="Team">
+        <PublicPage title="Team" cta={false}>
           <h4>Our Awesome Team!</h4>
+          <p>Our team of elite tech and business experts get the job done, on time, while having fun!</p>
           <div className="members">
             <a href="http://www.github.com/borg"> 
               <div className="member">

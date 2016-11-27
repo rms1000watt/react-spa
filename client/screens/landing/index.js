@@ -1,4 +1,5 @@
 import React from 'react';
+import CTA from '../../components/CTA/';
 import { showLock } from '../../globals';
 import PriceTable from '../../components/PriceTable/';
 import PublicHeader from '../../components/PublicHeader/';
@@ -182,15 +183,8 @@ class Landing extends React.Component {
           </Row>
         </div>
 
-
-        <div className="cta-container">
-          <Row className="section-header">
-            <Col xs={12} className="title">
-              <h4>Join the Open Beta Today!</h4>
-            </Col>
-          </Row>
-          <Button onTouchTap={this.buttonHandler} bsStyle="warning">Sign Up for Free</Button>
-        </div>
+        <CTA/>
+        
         <PublicFooter/>
       </div>
     );

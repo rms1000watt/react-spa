@@ -31,7 +31,7 @@ class Contact extends React.Component {
   render() {
     return (
       <div className="contact-screen-container">
-        <PublicPage title="Contact">
+        <PublicPage title="Contact" cta={false}>
           
           <Row className="map-row">
             <Col>

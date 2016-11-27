@@ -28,7 +28,6 @@ class PublicFooter extends React.Component {
               <h3>Overview</h3>
               <ul>
                 <li onTouchTap={()=>{browserHistory.push("/features")}}>Features</li>
-                <li onTouchTap={()=>{browserHistory.push("/services")}}>Services</li>
                 <li onTouchTap={()=>{browserHistory.push("/pricing")}}>Pricing</li>
                 <li onTouchTap={()=>{browserHistory.push("/support")}}>Support</li>
               </ul>
@@ -57,7 +56,7 @@ class PublicFooter extends React.Component {
                   <InputGroup>
                     <FormControl type="text" placeholder="Email"/>
                     <InputGroup.Button>
-                      <Button onTouchTap={this.submitNewsletter}>Submit</Button>
+                      <Button onTouchTap={this.submitNewsletter} bsStyle="warning">Submit</Button>
                     </InputGroup.Button>
                   </InputGroup>
                 </FormGroup>
