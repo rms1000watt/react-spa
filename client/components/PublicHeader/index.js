@@ -37,8 +37,8 @@ class PublicHeader extends React.Component {
             <Navbar.Collapse>
                 <Nav>
                     <NavItem eventKey={1} onTouchTap={()=>{browserHistory.push("/features")}}>Features</NavItem>
-                    <NavItem eventKey={1} onTouchTap={()=>{browserHistory.push("/about")}}>About</NavItem>
-                    <NavItem eventKey={1} onTouchTap={()=>{browserHistory.push("/team")}}>Team</NavItem>
+                    <NavItem eventKey={1} onTouchTap={()=>{browserHistory.push("/pricing")}}>Pricing</NavItem>
+                    <NavItem eventKey={1} onTouchTap={()=>{browserHistory.push("/support")}}>Support</NavItem>
                     <NavItem eventKey={2} onTouchTap={()=>{browserHistory.push("/contact")}}>Contact</NavItem>
                 </Nav>
                 <Nav pullRight>

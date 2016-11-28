@@ -70,7 +70,7 @@ class Landing extends React.Component {
                 <div className="hero">
                     <h2>BLAH BLAH BLAH BLAH BLAH BLAH</h2>
                     <p className="sub-text">Lorem ipsum ponderum assentior dolor sit amet, illum ponderum assentior ne mei.</p>
-                    <p><Button onTouchTap={this.buttonHandler} bsStyle="warning">Signup for Free</Button></p>
+                    <p><Button onTouchTap={this.buttonHandler} bsStyle="warning">Sign Up for Free</Button></p>
                 </div>
               </Col>
               <Col sm={6} md={5}>
