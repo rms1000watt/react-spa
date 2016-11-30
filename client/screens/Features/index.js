@@ -98,13 +98,8 @@ class Features extends React.Component {
               <Col xsHidden sm={2}/>
               <Col xs={12} sm={8}>
                 <Well>
-                
-                  
                     <span>Use React SPA now with all of these features!</span>
-                  
                     <Button onTouchTap={this.buttonHandler} bsStyle="warning">Sign Up</Button>
-                  
-                  
                 </Well>  
               </Col>
             </Row>

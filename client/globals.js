@@ -10,6 +10,42 @@ export const PORT = 8111;
 export const BASE_URL = 'http://'+ location.hostname + ':' + PORT;
 export const EMAIL_REGEX = /^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i;
 
+export const PRICING_DATA = [
+  {
+    price: 49,
+    planName: "Bronze",
+    features: [
+      "Bronze feature here",
+      "Other Bronze stuff",
+      "Oh wow its Bronze",
+      "Even more features",
+      "Even more features",
+    ],
+  },
+  {
+    price: 99,
+    planName: "Silver",
+    features: [
+      "Silver good feature",
+      "Silver awesome feature",
+      "Feature for silver",
+      "Even more features",
+      "Even more features",
+    ],
+  },
+  {
+    price: 199,
+    planName: "Gold",
+    features: [
+      "Gold best features",
+      "Features for Gold",
+      "Gold features here",
+      "Featues for Gold is best",
+      "Another row?!"
+    ],
+  },
+]
+
 
 const lock = new Auth0Lock(AUTH0_CLIENT_ID, AUTH0_DOMAIN, {});
 lock.on("authenticated", handleAuthenticated)

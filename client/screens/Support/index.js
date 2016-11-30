@@ -9,7 +9,7 @@ class Support extends React.Component {
   render() {
     return (
       <div className="support-container">
-        <PublicPage>
+        <PublicPage title="Support">
           Support
         </PublicPage>
       </div>

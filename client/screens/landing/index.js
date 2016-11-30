@@ -1,9 +1,12 @@
 import React from 'react';
 import CTA from '../../components/CTA/';
-import { showLock } from '../../globals';
 import PriceTable from '../../components/PriceTable/';
 import PublicHeader from '../../components/PublicHeader/';
 import PublicFooter from '../../components/PublicFooter/';
+import { 
+  showLock, 
+  PRICING_DATA 
+} from '../../globals';
 import {
   Button,
   Row,
@@ -11,42 +14,6 @@ import {
   Image
   } from 'react-bootstrap';
 
-
-let pricingData = [
-  {
-    price: 49,
-    planName: "Bronze",
-    features: [
-      "Bronze feature here",
-      "Other Bronze stuff",
-      "Oh wow its Bronze",
-      "Even more features",
-      "Even more features",
-    ],
-  },
-  {
-    price: 99,
-    planName: "Silver",
-    features: [
-      "Silver good feature",
-      "Silver awesome feature",
-      "Feature for silver",
-      "Even more features",
-      "Even more features",
-    ],
-  },
-  {
-    price: 199,
-    planName: "Gold",
-    features: [
-      "Gold best features",
-      "Features for Gold",
-      "Gold features here",
-      "Featues for Gold is best",
-      "Another row?!"
-    ],
-  },
-]
 
 class Landing extends React.Component {
   constructor(props) {
@@ -139,10 +106,10 @@ class Landing extends React.Component {
             </Col>
           </Row>
           <Row className="price-table">
-              {pricingData.map((val, ind)=>{
+              {PRICING_DATA.map((val, ind)=>{
                 return(
-                <Col key={ind} xs={12} smOffset={3} sm={6} mdOffset={0} md={12/pricingData.length}>
-                  <PriceTable ind={ind} features={val.features} planName={val.planName} length={pricingData.length} price={val.price} buttonHandler={this.buttonHandler}/>
+                <Col key={ind} xs={12} smOffset={3} sm={6} mdOffset={0} md={12/PRICING_DATA.length}>
+                  <PriceTable ind={ind} features={val.features} planName={val.planName} length={PRICING_DATA.length} price={val.price} buttonHandler={this.buttonHandler}/>
                 </Col>
               )})}
           </Row>

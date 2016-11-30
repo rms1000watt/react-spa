@@ -38,6 +38,7 @@ class PublicFooter extends React.Component {
                 <li onTouchTap={()=>{browserHistory.push("/about")}}>About</li>
                 <li onTouchTap={()=>{browserHistory.push("/team")}}>Team</li>
                 <li onTouchTap={()=>{browserHistory.push("/contact")}}>Contact</li>
+                <li onTouchTap={()=>{browserHistory.push("/terms")}}>Terms</li>
               </ul>
             </Col>
             <Col xs={4} sm={2}>
